@@ -268,7 +268,6 @@ TRX="
 <i>Notifikasi Via RstoreBOT</i>
 <b>Tele : @kytxz</b>
 "
-curl -s --max-time $TIMES -d "chat_id=$CHATIDGC&disable_web_page_preview=1&text=$TRX&parse_mode=html" $URL
 clear
 clear
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
