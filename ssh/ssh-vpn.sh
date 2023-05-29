@@ -130,9 +130,9 @@ apt -y install nginx
 cd
 rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
-wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/myridwan/VVIP/ipuk/ssh/nginx.conf"
+wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/mofukuy/VVIP2/ipuk/ssh/nginx.conf"
 rm /etc/nginx/conf.d/vps.conf
-wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/myridwan/VVIP/ipuk/ssh/vps.conf"
+wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/mofukuy/VVIP2/ipuk/ssh/vps.conf"
 /etc/init.d/nginx restart
 
 mkdir /etc/systemd/system/nginx.service.d
@@ -143,8 +143,8 @@ service nginx restart
 cd
 mkdir /home/vps
 mkdir /home/vps/public_html
-wget -O /home/vps/public_html/index.html "https://raw.githubusercontent.com/myridwan/VVIP/ipuk/ssh/multiport"
-wget -O /home/vps/public_html/.htaccess "https://raw.githubusercontent.com/myridwan/VVIP/ipuk/ssh/.htaccess"
+wget -O /home/vps/public_html/index.html "https://raw.githubusercontent.com/mofukuy/VVIP2/ipuk/ssh/multiport"
+wget -O /home/vps/public_html/.htaccess "https://raw.githubusercontent.com/mofukuy/VVIP2/ipuk/ssh/.htaccess"
 mkdir /home/vps/public_html/ss-ws
 mkdir /home/vps/public_html/clash-ws
 # install badvpn
@@ -259,7 +259,7 @@ echo 'Please send in your comments and/or suggestions to zaf@vsnl.com'
 # banner /etc/issue.net
 sleep 1
 echo -e "[ ${green}INFO$NC ] Settings banner"
-wget -q -O /etc/issue.net "https://raw.githubusercontent.com/myridwan/VVIP/ipuk/issue.net"
+wget -q -O /etc/issue.net "https://raw.githubusercontent.com/mofukuy/VVIP2/ipuk/issue.net"
 chmod +x /etc/issue.net
 echo "Banner /etc/issue.net" >> /etc/ssh/sshd_config
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
@@ -268,7 +268,7 @@ sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dr
 cd /usr/bin
 wget -O speedtest "https://raw.githubusercontent.com/FranataVPN/src/ipuk/ssh/speedtest_cli.py"
 wget -O xp "https://raw.githubusercontent.com/myridwan/VVIP/ipuk/ssh/xp.sh"
-wget -O auto-set "https://raw.githubusercontent.com/myridwan/VVIP/ipuk/xray/auto-set.sh"
+wget -O auto-set "https://raw.githubusercontent.com/mofukuy/VVIP2/ipuk/xray/auto-set.sh"
 chmod +x speedtest
 chmod +x xp
 chmod +x auto-set
