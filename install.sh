@@ -292,24 +292,24 @@ EOF
 echo -e "$green[INFO]$NC Install SSH"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/myridwan/VVIP/ipuk/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/mofukuy/VVIP2/ipuk/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
 #Instal Xray
 echo -e "$green[INFO]$NC Install XRAY!"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/myridwan/VVIP/ipuk/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
+wget https://raw.githubusercontent.com/mofukuy/VVIP2/ipuk/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
 clear
 echo -e "$green[INFO]$NC Install SET-BR!"
-wget https://raw.githubusercontent.com/myridwan/VVIP/ipuk/backup/set-br.sh && chmod +x set-br.sh && ./set-br.sh
+wget https://raw.githubusercontent.com/mofukuy/VVIP2/ipuk/backup/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 clear
 echo -e "$green[INFO]$NC Install WEBSOCKET!"
-wget https://raw.githubusercontent.com/myridwan/VVIP/ipuk/websocket/insshws.sh && chmod +x insshws.sh && ./insshws.sh
+wget https://raw.githubusercontent.com/mofukuy/VVIP2/ipuk/websocket/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 clear
-wget https://raw.githubusercontent.com/myridwan/VVIP/ipuk/websocket/nontls.sh && chmod +x nontls.sh && ./nontls.sh
+wget https://raw.githubusercontent.com/mofukuy/VVIP2/ipuk/websocket/nontls.sh && chmod +x nontls.sh && ./nontls.sh
 clear
 echo -e "$green[INFO]$NC Download Extra Menu"
 sleep 2
-wget https://raw.githubusercontent.com/mofukuy/VVIP3/ipuk/update/update.sh && chmod +x update.sh && ./update.sh
+wget https://raw.githubusercontent.com/mofukuy/VVIP2/ipuk/update/update.sh && chmod +x update.sh && ./update.sh
 rm -f update.sh
 clear
 ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
