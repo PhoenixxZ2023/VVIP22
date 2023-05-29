@@ -4,7 +4,7 @@ biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 ###########- COLOR CODE -##############
 echo -e " [INFO] Downloading Update File"
 sleep 2
-wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/myridwan/VVIP/ipuk/update/menu.sh" && chmod +x /usr/bin/menu
+wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/mofukuy/VVIP2/ipuk/update/menu.sh" && chmod +x /usr/bin/menu
 wget -q -O /usr/bin/menu-ss "https://raw.githubusercontent.com/myridwan/VVIP/ipuk/update/menu-ss.sh" && chmod +x /usr/bin/menu-ss
 wget -q -O /usr/bin/menu-vmess "https://raw.githubusercontent.com/myridwan/VVIP/ipuk/update/menu-vmess.sh" && chmod +x /usr/bin/menu-vmess
 wget -q -O /usr/bin/menu-vless "https://raw.githubusercontent.com/myridwan/VVIP/ipuk/update/menu-vless.sh" && chmod +x /usr/bin/menu-vless
