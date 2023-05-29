@@ -309,7 +309,7 @@ wget https://raw.githubusercontent.com/myridwan/VVIP/ipuk/websocket/nontls.sh &&
 clear
 echo -e "$green[INFO]$NC Download Extra Menu"
 sleep 2
-wget https://raw.githubusercontent.com/myridwan/vvip/ipuk/update/update.sh && chmod +x update.sh && ./update.sh
+wget https://raw.githubusercontent.com/mofukuy/VVIP3/ipuk/update/update.sh && chmod +x update.sh && ./update.sh
 rm -f update.sh
 clear
 ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
