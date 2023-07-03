@@ -9,7 +9,7 @@ COLBG1="$(cat /etc/ssnvpn/theme/$colornow | grep -w "BG" | cut -d: -f2|sed 's/ /
 ###########- END COLOR CODE -##########
 
 BURIQ () {
-    curl -sS https://raw.githubusercontent.com/mofukuy/Autoscript-by-azi/main/izin > /root/tmp
+    curl -sS https://raw.githubusercontent.com/mofukuy/izinvps/ipuk/ip > /root/tmp
     data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
     for user in "${data[@]}"
     do
@@ -27,7 +27,7 @@ BURIQ () {
 }
 
 MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS https://raw.githubusercontent.com/mofukuy/Autoscript-by-azi/main/izin | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS https://raw.githubusercontent.com/mofukuy/izinvps/ipuk/ip | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
 
@@ -44,7 +44,7 @@ fi
 
 PERMISSION () {
     MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS https://raw.githubusercontent.com/mofukuy/Autoscript-by-azi/main/izin | awk '{print $4}' | grep $MYIP)
+    IZIN=$(curl -sS https://raw.githubusercontent.com/mofukuy/izinvps/ipuk/ip | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
     else
@@ -102,7 +102,7 @@ done
 rm -rf /tmp/other.txt
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}                 • CyberVPN •                 $COLOR1│$NC"
+echo -e "$COLOR1│${NC}                 • WhiteVPN •                 $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -120,7 +120,7 @@ if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
 echo -e "$COLOR1│${NC}  • You have no existing clients!"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}                 • CyberVPN •                 $COLOR1│$NC"
+echo -e "$COLOR1│${NC}                 • WhiteVPN •                 $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -136,7 +136,7 @@ echo -e "$COLOR1│${NC}"
 echo -e "$COLOR1│${NC}  • [NOTE] Press any key to back on menu"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}                 • CyberVPN •                 $COLOR1│$NC"
+echo -e "$COLOR1│${NC}                 • WhiteVPN •                 $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1───────────────────────────────────────────────────${NC}"
 read -rp "   Input Username : " user
@@ -168,7 +168,7 @@ echo -e "$COLOR1│${NC}   Days Added  : $masaaktif Days"
 echo -e "$COLOR1│${NC}   Expired On  : $exp4"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}                 • CyberVPN •                 $COLOR1│$NC"
+echo -e "$COLOR1│${NC}                 • WhiteVPN •                 $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -187,7 +187,7 @@ echo -e "$COLOR1┌────────────────────�
 echo -e "$COLOR1│${NC}  • You Dont have any existing clients!"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}                 • CyberVPN •                 $COLOR1│$NC"
+echo -e "$COLOR1│${NC}                 • WhiteVPN •                 $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -221,7 +221,7 @@ echo -e "$COLOR1│${NC}   • Client Name : $user"
 echo -e "$COLOR1│${NC}   • Expired On  : $exp"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}                 • CyberVPN •                 $COLOR1│$NC"
+echo -e "$COLOR1│${NC}                 • WhiteVPN •                 $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -243,7 +243,7 @@ until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${CLIENT_EXISTS} == '0' ]]; do
 echo -e "$COLOR1│${NC} [Error] Username cannot be empty "
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}                 • CyberVPN •                 $COLOR1│$NC"
+echo -e "$COLOR1│${NC}                 • WhiteVPN •                 $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -255,7 +255,7 @@ if [[ ${CLIENT_EXISTS} == '1' ]]; then
 echo -e "$COLOR1│${NC} Please choose another name."
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}                 • CyberVPN •                 $COLOR1│$NC"
+echo -e "$COLOR1│${NC}                 • WhiteVPN •                 $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -302,7 +302,7 @@ echo -e "$COLOR1 ${NC} Link GRPC : "
 echo -e "$COLOR1 ${NC} ${vlesslink3}" 
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}                 • CyberVPN •                 $COLOR1│$NC"
+echo -e "$COLOR1│${NC}                 • WhiteVPN •                 $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo "" 
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -321,7 +321,7 @@ echo -e " $COLOR1│$NC                                              ${NC} $COLO
 echo -e " $COLOR1│$NC   ${COLOR1}[00]${NC} • GO BACK${NC}                              $COLOR1│$NC"
 echo -e " $COLOR1└───────────────────────────────────────────────┘${NC}"
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}                 • CyberVPN •                 $COLOR1│$NC"
+echo -e "$COLOR1│${NC}                 • WhiteVPN •                 $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e ""
 read -p " Select menu :  "  opt
