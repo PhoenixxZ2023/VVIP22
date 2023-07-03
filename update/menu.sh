@@ -1,7 +1,7 @@
 #!/bin/bash
 # =========================================
 #!/bin/bash
-BOT="https://raw.githubusercontent.com/myridwan/src/ipuk/"
+#BOT="https://raw.githubusercontent.com/myridwan/src/ipuk/"
 UPDATE="https://raw.githubusercontent.com/mofukuy/ipuk/update/update.sh"
 BURIQ () {
     curl -sS https://raw.githubusercontent.com/mofukuy/izinvps/ipuk/ip > /root/tmp
@@ -188,7 +188,7 @@ echo -e "  ${BLUE}• ${GREEN}ISP-VPS             ${NC}= ${ISP}"
 echo -e "  ${BLUE}• ${GREEN}City                ${NC}= ${CITY}"
 echo -e "  ${BLUE}• ${GREEN}Clients Name        ${NC}= ${YELLOW}$Name ${NC}"
 echo -e "  ${BLUE}• ${GREEN}Script Exfire       ${NC}= ${YELLOW}$Exp ${NC}"
-echo -e "  ${BLUE}• ${GREEN}Developer           ${NC}= RstoreVPN Tunneling ${NC}"
+echo -e "  ${BLUE}• ${GREEN}Developer           ${NC}= WhiteVPN Tunneling ${NC}"
 echo -e "$COLOR1┌────────────────────────────────────────────────────────────┐${NC}"
 echo -e "                     << STATUS SERVICE >>                    \E[0m" | lolcat
 echo -e "$COLOR1┌────────────────────────────────────────────────────────────┐${NC}"
