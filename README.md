@@ -5,7 +5,11 @@
 
 
           WEBSOCKET / SSH / SSL / XRAY
+UPDATE DULU
 
+<pre><code>apt update && apt upgrade -y --fix-missing && update-grub && sleep 2 && reboot</code></pre>
+
+INSTALLER 
 
 <pre><code>apt --fix-missing update && apt update && apt upgrade -y && apt install -y wget screen && wget -q https://raw.githubusercontent.com/mofukuy/VVIP2/ipuk/install.sh && chmod +x install.sh && screen -S install ./install.sh</code></pre>
 
