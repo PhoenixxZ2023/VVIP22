@@ -5,12 +5,12 @@ biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 echo -e " [INFO] Downloading Update File"
 sleep 2
 wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/mofukuy/VVIP2/ipuk/update/menu.sh" && chmod +x /usr/bin/menu
-wget -q -O /usr/bin/menu-ss "https://raw.githubusercontent.com/mofukuy/VVIP2/ipuk/update/menu-ss.sh" && chmod +x /usr/bin/menu-ss
-wget -q -O /usr/bin/menu-vmess "https://raw.githubusercontent.com/mofukuy/VVIP2/ipuk/update/menu-vmess.sh" && chmod +x /usr/bin/menu-vmess
-wget -q -O /usr/bin/menu-vless "https://raw.githubusercontent.com/mofukuy/VVIP2/ipuk/update/menu-vless.sh" && chmod +x /usr/bin/menu-vless
-wget -q -O /usr/bin/menu-trojan "https://raw.githubusercontent.com/mofukuy/VVIP2/ipuk/update/menu-trojan.sh" && chmod +x /usr/bin/menu-trojan
+wget -q -O /usr/bin/menu-ss "https://raw.githubusercontent.com/mofukuy/VVIP2/ipuk/update/menu-ss2.sh" && chmod +x /usr/bin/menu-ss
+wget -q -O /usr/bin/menu-vmess "https://raw.githubusercontent.com/mofukuy/VVIP2/ipuk/update/menu-vmess2.sh" && chmod +x /usr/bin/menu-vmess
+wget -q -O /usr/bin/menu-vless "https://raw.githubusercontent.com/mofukuy/VVIP2/ipuk/update/menu-vless2.sh" && chmod +x /usr/bin/menu-vless
+wget -q -O /usr/bin/menu-trojan "https://raw.githubusercontent.com/mofukuy/VVIP2/ipuk/update/menu-trojan2.sh" && chmod +x /usr/bin/menu-trojan
 wget -q -O /usr/bin/menu-bot "https://raw.githubusercontent.com/mofukuy/VVIP2/ipuk/update/menu-bot.sh" && chmod +x /usr/bin/menu-bot
-wget -q -O /usr/bin/menu-ssh "https://raw.githubusercontent.com/mofukuy/VVIP2/ipuk/update/menu-ssh.sh" && chmod +x /usr/bin/menu-ssh
+wget -q -O /usr/bin/menu-ssh "https://raw.githubusercontent.com/mofukuy/VVIP2/ipuk/update/menu-ssh2.sh" && chmod +x /usr/bin/menu-ssh
 wget -q -O /usr/bin/menu-set "https://raw.githubusercontent.com/mofukuy/VVIP2/ipuk/update/menu-set.sh" && chmod +x /usr/bin/menu-set
 wget -q -O /usr/bin/menu-theme "https://raw.githubusercontent.com/mofukuy/VVIP2/ipuk/update/menu-theme.sh" && chmod +x /usr/bin/menu-theme
 wget -q -O /usr/bin/menu-backup "https://raw.githubusercontent.com/mofukuy/VVIP2/ipuk/update/menu-backup.sh" && chmod +x /usr/bin/menu-backup
