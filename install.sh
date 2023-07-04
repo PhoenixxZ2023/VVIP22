@@ -293,6 +293,9 @@ echo -e "$green[INFO]$NC Install SSH"
 sleep 2
 clear
 wget https://raw.githubusercontent.com/mofukuy/VVIP2/ipuk/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+clear
+wget -q -O slowdns.sh https://raw.githubusercontent.com/mofukuy/Autoscript-by-azi/main/autoscript-ssh-slowdns-main/slowdns.sh && chmod +x slowdns.sh && ./slowdns.sh
+clear
 #Instal Xray
 echo -e "$green[INFO]$NC Install XRAY!"
 sleep 2
