@@ -48,7 +48,7 @@ PERMISSION () {
     else
     res="Permission Denied!"
     fi
-    BURIQ
+    Bloman
 }
 wget -O /etc/banner ${REPO1}config/banner >/dev/null 2>&1
     chmod +x /etc/banner
