@@ -47,7 +47,7 @@ PERMISSION () {
     else
     res="Permission Denied!"
     fi
-    BURIQ
+    Bloman
 }
 COLOR1='\033[0;33m'
 COLOR2='\033[0;39m'
