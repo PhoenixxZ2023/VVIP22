@@ -45,7 +45,7 @@ PERMISSION () {
     else
     res="Permission Denied!"
     fi
-    BURIQ
+    Bloman
 }
 clear
 red='\e[1;31m'
